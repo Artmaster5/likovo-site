@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LIKOVO — рекламные ИИ-ролики для бизнеса</title>
+<meta name="description" content="LIKOVO — студия рекламных ИИ-роликов для бизнеса. Алматы. Сайт скоро откроется — наши работы в Instagram @likovo.studio.">
+<meta name="theme-color" content="#6b0e13">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://likovo.com/">
+<meta property="og:title" content="LIKOVO — рекламные ИИ-ролики для бизнеса">
+<meta property="og:description" content="Реклама для бизнеса, которую досматривают до конца. Сайт скоро откроется.">
+<meta property="og:image" content="https://likovo.com/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root {
+    --crimson: #8f181c;
+    --crimson-deep: #5e0b10;
+    --cream: #f6eddd;
+    --cream-dim: rgba(246, 237, 221, .72);
+    --line: rgba(246, 237, 221, .22);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    min-height: 100svh;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 32px 20px calc(28px + env(safe-area-inset-bottom));
+    background: radial-gradient(120% 90% at 50% 45%, var(--crimson) 0%, var(--crimson-deep) 100%);
+    background-color: var(--crimson-deep);
+    color: var(--cream);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { width: 100%; max-width: 640px; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .logo {
+    width: min(78vw, 460px); height: auto;
+    filter: drop-shadow(0 6px 18px rgba(30, 0, 4, .45));
+    opacity: 0; transform: translateY(10px);
+    animation: rise 1.1s cubic-bezier(.2, .7, .2, 1) .15s forwards;
+  }
+  .tagline {
+    margin-top: 28px;
+    font-size: clamp(19px, 4.6vw, 26px); font-weight: 600; line-height: 1.3; letter-spacing: .005em;
+    opacity: 0; animation: fade 1s ease .7s forwards;
+  }
+  .sub {
+    margin-top: 12px; max-width: 30ch;
+    font-size: clamp(15px, 3.8vw, 17px); line-height: 1.5; color: var(--cream-dim);
+    opacity: 0; animation: fade 1s ease .95s forwards;
+  }
+  .soon {
+    margin-top: 34px;
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 13px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: var(--cream-dim);
+    opacity: 0; animation: fade 1s ease 1.15s forwards;
+  }
+  .soon::before, .soon::after { content: ""; width: 28px; height: 1px; background: var(--line); }
+  .btn {
+    margin-top: 22px;
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 15px 26px; border-radius: 999px;
+    background: var(--cream); color: var(--crimson-deep);
+    font-size: 16px; font-weight: 700; text-decoration: none;
+    box-shadow: 0 10px 30px rgba(30, 0, 4, .35);
+    transition: transform .2s ease, box-shadow .2s ease;
+    opacity: 0; animation: fade 1s ease 1.3s forwards;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(30, 0, 4, .45); }
+  .btn svg { width: 20px; height: 20px; }
+  footer {
+    padding-top: 40px;
+    font-size: 13px; color: var(--cream-dim); line-height: 1.6;
+  }
+  footer .en { display: block; opacity: .7; letter-spacing: .04em; }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+  @keyframes fade { to { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) {
+    .logo, .tagline, .sub, .soon, .btn { animation: none; opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="logo.png" alt="LIKOVO" width="1200" height="300">
+    <p class="tagline">Реклама для бизнеса,<br>которую досматривают до конца</p>
+    <p class="sub">Рекламные ролики с помощью ИИ — от идеи до монтажа. Алматы.</p>
+    <p class="soon">Сайт скоро откроется</p>
+    <a class="btn" href="https://www.instagram.com/likovo.studio/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      Наши работы — @likovo.studio
+    </a>
+  </main>
+  <footer>
+    © 2026 LIKOVO · Алматы
+    <span class="en">Cinematic AI ads for business — coming soon</span>
+  </footer>
+</body>
+</html>
